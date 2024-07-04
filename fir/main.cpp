@@ -67,7 +67,7 @@ int sc_main(int argc, char** argv)
  
  for(x=0; x < FILTER_TAPS; x++){
    sprintf(name, "in_data%d",x);   
-   sc_trace(trace_file, in_data[x]          , name);
+   sc_trace(trace_file, in_data          , name);
 
    sprintf(name, "coeff%d",x);   
    sc_trace(trace_file, coeff[x]            , name);
